@@ -13,12 +13,28 @@
       padding: 40px 20px;
       background-color: #f5f5f5;
     }
-    @media (max-width: 500px) {
-      body { background-color: #b19cd9; } /* light purple */
-    }
-    @media (min-width: 600px) {
-      body { background-color: #4b0082; } /* dark indigo */
-    }
+     /*Default background*/
+        body{
+            background-color:yellow;
+        }
+        /*Background for screen width 500px or less*/
+        @media(max-width:500px){
+            body{
+                background-color:purple;
+            }
+        }
+        /*Background for screen width more than 500px*/
+        @media(min-width:501px){
+            body{
+                background-color:green;
+            }
+        }
+        /*Background when device is an landscape mode*/
+        @media(orientation:landscape){
+            body{
+                background-color:blue;
+            }
+        }
     .container {
       max-width: 960px;
       margin: auto;
